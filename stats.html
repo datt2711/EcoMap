@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics | EcoMap</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta name="description" content="Explore Australian recycling data and statistics.">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand">
+                <span class="eco-color">☘︎</span> EcoMap
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="map.html" class="nav-link">Map</a></li>
+                <li><a href="stats.html" class="nav-link">Stats</a></li>
+                <li><a href="resources.html" class="nav-link">Resources</a></li>
+                <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="animate-on-scroll text-center" style="margin-bottom: 60px;">
+            <h3 style="color: var(--primary-green); font-weight: 500; margin-bottom: 10px;">Data Journalism</h3>
+            <h1>Beyond the Bin</h1>
+            <p style="max-width: 600px; margin: 0 auto;">Understanding our waste footprint is the first step toward a
+                circular economy. Let's look at the numbers behind Australia's recycling habits.</p>
+        </div>
+
+        <section class="section animate-on-scroll stagger-1" style="padding-top: 0;">
+            <div class="grid grid-2" style="align-items: center;">
+                <div class="chart-wrapper">
+                    <canvas id="recoveryChart"></canvas>
+                </div>
+                <div style="padding: 24px;">
+                    <h2 style="font-size: 2rem; margin-bottom: 15px;">Recovery vs. Landfill</h2>
+                    <p>While Australia is making significant strides in waste recovery, millions of tonnes still end up
+                        in landfill. The gap between generation and recovery represents lost resources that could be
+                        reintroduced into the economy.</p>
+                    <p>By utilising specialised drop-off locations (like those found on EcoMap), we can directly
+                        influence this recovery rate, diverting complex materials from landfill.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section animate-on-scroll stagger-2">
+            <div class="grid grid-2" style="align-items: center; direction: rtl;">
+                <div class="chart-wrapper">
+                    <canvas id="breakdownChart"></canvas>
+                </div>
+                <div style="padding: 24px; direction: ltr;">
+                    <h2 style="font-size: 2rem; margin-bottom: 15px;">Waste Composition</h2>
+                    <p>A significant portion of our household waste consists of organics and paper/cardboard.
+                        Interestingly, organics placed in standard landfill bins decompose anaerobically, creating
+                        methane.</p>
+                    <p>Diverting food organics and garden organics (FOGO) into dedicated composting facilities is one of
+                        the most impactful climate actions a household can take.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 EcoMap Enterprise Computing. A digital sustainability initiative. By Datt Patel.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

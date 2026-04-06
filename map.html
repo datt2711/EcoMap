@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map | EcoMap</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <meta name="description" content="Find the nearest specialised recycling facility in Sydney.">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <style>
+        .map-filters {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+
+        .filter-btn {
+            padding: 10px 20px;
+            border-radius: var(--radius-pill);
+            border: 1px solid var(--glass-border);
+            background: var(--surface-color);
+            cursor: pointer;
+            font-weight: 500;
+            transition: all var(--transition-fast);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: var(--text-main);
+            color: var(--surface-color);
+            border-color: var(--text-main);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand">
+                <span class="eco-color">☘︎</span> EcoMap
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="map.html" class="nav-link">Map</a></li>
+                <li><a href="stats.html" class="nav-link">Stats</a></li>
+                <li><a href="resources.html" class="nav-link">Resources</a></li>
+                <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" style="padding-bottom: 0;">
+        <div class="animate-on-scroll text-center" style="margin-bottom: 40px;">
+            <h1>Find a Facility</h1>
+            <p style="max-width: 600px; margin: 0 auto;">Locate specialised dropping points for electronics, plastics,
+                and organic waste across Western Sydney.</p>
+        </div>
+
+        <section class="animate-on-scroll stagger-1" style="padding-top: 0; padding-bottom: 60px;">
+            <div class="grid grid-3" style="margin-bottom: 40px;">
+                <div class="card bg-white" style="padding: 24px;">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 10px;">1. Select Material</h3>
+                    <p style="font-size: 0.95rem; margin-bottom: 0;">Use the filters below the map to isolate the
+                        specific waste stream you need to securely dispose of.</p>
+                </div>
+                <div class="card bg-white" style="padding: 24px;">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 10px;">2. Find Location</h3>
+                    <p style="font-size: 0.95rem; margin-bottom: 0;">Click on any colored marker on the interactive map
+                        to view the facility name, exact address, and hours.</p>
+                </div>
+                <div class="card bg-white" style="padding: 24px;">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 10px;">3. Drop It Off</h3>
+                    <p style="font-size: 0.95rem; margin-bottom: 0;">Pack your sorted waste securely and drop it off
+                        during the designated operating hours.</p>
+                </div>
+            </div>
+
+            <div class="map-filters">
+                <button class="filter-btn active" data-type="all">All</button>
+                <button class="filter-btn" data-type="community_recycling_centre">Community Recycling Centres</button>
+                <button class="filter-btn" data-type="recovery">Recovery Facilities</button>
+                <button class="filter-btn" data-type="return_and_earn">Return and Earn</button>
+                <button class="filter-btn" data-type="scrap_metal">Scrap Metal</button>
+                <button class="filter-btn" data-type="green_waste">Green Waste</button>
+            </div>
+
+            <div class="map-container" id="map"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 EcoMap Enterprise Computing. A digital sustainability initiative. By Datt Patel.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

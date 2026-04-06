@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Cleanaway Western Sydney Material Recovery Facility",
+    "address": "600 Woodstock Ave, Rooty Hill NSW 2766",
+    "lat": -33.77402,
+    "lng": 150.84364,
+    "materials": ["Paper", "Cardboard", "Glass", "Plastics", "Aluminium"],
+    "hours": "Mon-Fri: 6:00 AM - 4:00 PM",
+    "category": "material_recovery_facility"
+  },
+  {
+    "name": "REMONDIS Seven Hills Resource Recovery Facility",
+    "address": "29 Powers Rd, Seven Hills NSW 2147",
+    "lat": -33.76510,
+    "lng": 150.93880,
+    "materials": ["Construction Waste", "Demolition Waste", "Commercial Waste", "Timber"],
+    "hours": "Mon-Fri: 5:00 AM - 4:00 PM, Sat: 5:00 AM - 12:00 PM",
+    "category": "resource_recovery"
+  },
+  {
+    "name": "Penrith Community Recycling Centre",
+    "address": "Gate 3, 96 Dunheved Circuit, St Marys NSW 2760",
+    "lat": -33.74815,
+    "lng": 150.76722,
+    "materials": ["Paint", "Gas Bottles", "Motor Oils", "Batteries", "Fluoro Globes", "Smoke Detectors"],
+    "hours": "Mon-Fri: 8:30 AM - 2:00 PM",
+    "category": "community_recycling_centre"
+  },
+  {
+    "name": "Sydney Recycling Park",
+    "address": "16-23 Clifton Ave, Kemps Creek NSW 2178",
+    "lat": -33.86980,
+    "lng": 150.78450,
+    "materials": ["Industrial Waste", "Concrete", "Bricks", "Metals"],
+    "hours": "Mon-Fri: 6:00 AM - 4:30 PM",
+    "category": "industrial_recycling_park"
+  },
+  {
+    "name": "Cleanaway Kemps Creek Resource Recovery Park",
+    "address": "1725 Elizabeth Dr, Kemps Creek NSW 2178",
+    "lat": -33.87620,
+    "lng": 150.77810,
+    "materials": ["Solid Waste", "Commercial Waste", "Green Waste"],
+    "hours": "Mon-Fri: 6:00 AM - 4:00 PM",
+    "category": "resource_recovery"
+  },
+  {
+    "name": "Blacktown Community Recycling Centre",
+    "address": "20-22 Owen St, Glendenning NSW 2761",
+    "lat": -33.75050,
+    "lng": 150.85020,
+    "materials": ["Household Problem Waste", "E-Waste", "Chemicals", "Batteries"],
+    "hours": "Mon-Sat: 8:00 AM - 4:00 PM (Closed Wed)",
+    "category": "community_recycling_centre"
+  },
+  {
+    "name": "Liverpool Community Recycling Centre",
+    "address": "99 Rose St, Liverpool NSW 2170",
+    "lat": -33.91840,
+    "lng": 150.93310,
+    "materials": ["Gas Bottles", "Paint", "Oils", "Electronic Waste"],
+    "hours": "Mon-Sat: 7:00 AM - 3:45 PM",
+    "category": "community_recycling_centre"
+  },
+  {
+    "name": "Return and Earn - St Marys RSL Point",
+    "address": "Mamre Rd & Hall St, St Marys NSW 2760",
+    "lat": -33.76810,
+    "lng": 150.77110,
+    "materials": ["Glass Bottles", "Plastic Bottles", "Aluminium Cans"],
+    "hours": "Mon-Sun: 7:00 AM - 7:00 PM",
+    "category": "return_and_earn"
+  },
+  {
+    "name": "Sell & Parker Scrap Metal Blacktown",
+    "address": "11 Tattersall Rd, Kings Park NSW 2148",
+    "lat": -33.74420,
+    "lng": 150.89880,
+    "materials": ["Copper", "Aluminium", "Brass", "Steel", "Car Batteries"],
+    "hours": "Mon-Fri: 7:00 AM - 4:30 PM, Sat: 7:00 AM - 11:30 AM",
+    "category": "scrap_metal"
+  },
+  {
+    "name": "Return and Earn Penrith Bulk Depot",
+    "address": "120-128 Mulgoa Rd, Penrith NSW 2750",
+    "lat": -33.75890,
+    "lng": 150.68650,
+    "materials": ["Beverage Containers", "Glass", "Plastics"],
+    "hours": "Mon-Sun: 8:00 AM - 5:00 PM",
+    "category": "return_and_earn"
+  },
+  {
+    "name": "Hawkesbury City Waste Management Facility",
+    "address": "1 The Driftway, South Windsor NSW 2756",
+    "lat": -33.62730,
+    "lng": 150.79310,
+    "materials": ["Green Waste", "Tyres", "Mattresses", "E-Waste", "General Recyclables"],
+    "hours": "Mon-Sun: 8:00 AM - 4:00 PM",
+    "category": "resource_recovery"
+  },
+  {
+    "name": "Sims Metal St Marys",
+    "address": "40-52 Christie St, St Marys NSW 2760",
+    "lat": -33.75160,
+    "lng": 150.76210,
+    "materials": ["Scrap Metal", "Whitegoods", "End-of-life Vehicles", "Machinery"],
+    "hours": "Mon-Fri: 7:00 AM - 4:00 PM",
+    "category": "scrap_metal"
+  },
+  {
+    "name": "Bettergrow Kemps Creek",
+    "address": "22-32 Clifton Ave, Kemps Creek NSW 2178",
+    "lat": -33.87110,
+    "lng": 150.78520,
+    "materials": ["Green Waste", "Organics", "Soil", "Timber"],
+    "hours": "Mon-Fri: 7:00 AM - 5:00 PM",
+    "category": "green_waste"
+  },
+  {
+    "name": "City of Parramatta CRC",
+    "address": "38-40 Pike St, Rydalmere NSW 2116",
+    "lat": -33.81520,
+    "lng": 151.03610,
+    "materials": ["Paint", "Oils", "Gas Bottles", "Batteries", "Fluorescent Lights"],
+    "hours": "Tue-Sat: 8:00 AM - 3:00 PM",
+    "category": "community_recycling_centre"
+  },
+  {
+    "name": "Visy Recycling Smithfield",
+    "address": "112-118 McCredie Rd, Smithfield NSW 2164",
+    "lat": -33.84410,
+    "lng": 150.94220,
+    "materials": ["Paper", "Cardboard", "Plastics"],
+    "hours": "Mon-Fri: 24 Hours",
+    "category": "material_recovery_facility"
+  },
+  {
+    "name": "Return and Earn Emerton Village",
+    "address": "40 Bunting St, Emerton NSW 2770",
+    "lat": -33.73740,
+    "lng": 150.81230,
+    "materials": ["Beverage Containers", "Glass Bottles", "Cans"],
+    "hours": "Mon-Sun: 7:00 AM - 7:00 PM",
+    "category": "return_and_earn"
+  },
+  {
+    "name": "Campbelltown Community Recycling Centre",
+    "address": "69 Watsford Rd, Campbelltown NSW 2560",
+    "lat": -34.07220,
+    "lng": 150.80310,
+    "materials": ["Chemicals", "Paints", "Batteries", "Oils"],
+    "hours": "Mon-Sat: 8:00 AM - 3:00 PM",
+    "category": "community_recycling_centre"
+  },
+  {
+    "name": "Camden Council Narellan Resource Recovery Centre",
+    "address": "40 Orielton Rd, Smeaton Grange NSW 2567",
+    "lat": -34.02610,
+    "lng": 150.75520,
+    "materials": ["General Waste", "E-Waste", "Green Waste", "Scrap Metal"],
+    "hours": "Mon-Sun: 7:00 AM - 4:00 PM",
+    "category": "resource_recovery"
+  },
+  {
+    "name": "Return and Earn Mt Druitt West",
+    "address": "Mount Druitt Rd, Mt Druitt NSW 2770",
+    "lat": -33.76710,
+    "lng": 150.82220,
+    "materials": ["Plastic Bottles", "Glass Bottles", "Cans"],
+    "hours": "Mon-Sun: 7:00 AM - 5:00 PM",
+    "category": "return_and_earn"
+  },
+  {
+    "name": "BINGO Recycling Centre St Marys",
+    "address": "25-27 Dunheved Circuit, St Marys NSW 2760",
+    "lat": -33.74310,
+    "lng": 150.76810,
+    "materials": ["Building Waste", "Timber", "Concrete", "Soil"],
+    "hours": "Mon-Fri: 6:00 AM - 4:00 PM",
+    "category": "resource_recovery"
+  }
+]

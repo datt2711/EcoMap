@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback | EcoMap</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Share your recycling experiences with EcoMap.">
+  <style>
+    .feedback-container {
+      background: var(--surface-color);
+      padding: 40px;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--glass-border);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .stats-summary {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--glass-border);
+      display: none;
+      /* Shown via JS */
+    }
+
+    .stat-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      padding: 10px;
+      background: #f7f9f7;
+      border-radius: var(--radius-sm);
+    }
+
+    .stat-bar {
+      height: 6px;
+      background: var(--primary-green);
+      border-radius: 3px;
+      margin-top: 6px;
+      transition: width 0.5s ease;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand">
+        <span class="eco-color">☘︎</span> EcoMap
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="map.html" class="nav-link">Map</a></li>
+        <li><a href="stats.html" class="nav-link">Stats</a></li>
+        <li><a href="resources.html" class="nav-link">Resources</a></li>
+        <li><a href="feedback.html" class="nav-link active">Feedback</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="animate-on-scroll text-center" style="margin-bottom: 40px;">
+      <h1>Community Voice</h1>
+      <p style="max-width: 600px; margin: 0 auto;">Help us improve recycling in Sydney by sharing your recent disposal
+        experiences.</p>
+    </div>
+
+    <section class="grid grid-2 animate-on-scroll stagger-1" style="align-items: start;">
+      <div style="padding-right: 20px;">
+        <h2 style="font-size: 2rem; margin-bottom: 15px;">Why Your Feedback Matters</h2>
+        <p>Local councils rely on community reporting to understand where recycling infrastructure is succeeding and
+          where it falls short.</p>
+        <p>By logging your drop-off experience, you directly help officials identify overflowing bins, confusing
+          signage, and inaccessible locations.</p>
+        <div class="card bg-white" style="margin-top: 30px; padding: 24px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px;">Your Impact</h3>
+          <ul style="color: var(--text-secondary); margin-left: 20px; font-size: 0.95rem;">
+            <li>Faster bin collection scheduling</li>
+            <li>Improved drop-off facility signage</li>
+            <li>Funding for new recycling locations</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="feedback-container" id="feedbackContainer" style="margin: 0; width: 100%;">
+        <form id="feedbackForm" style="transition: opacity 0.3s ease;">
+          <div class="form-group">
+            <label class="form-label">How easy was it to drop off your waste?</label>
+            <div class="radio-group">
+              <label class="radio-label">
+                <input type="radio" name="ease" value="easy" required> Easy
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="ease" value="moderate"> Moderate
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="ease" value="difficult"> Difficult
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">What materials were you recycling? (Select all that apply)</label>
+            <div class="checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="materials" value="electronics"> Electronics
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="materials" value="plastics"> Soft Plastics
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="materials" value="organics"> Organics
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Additional comments or issues?</label>
+            <textarea name="comments" class="form-control" rows="4"
+              placeholder="e.g., The bin was full or location was hard to find..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Experience</button>
+        </form>
+
+        <div id="successMessage" style="display: none; text-align: center; padding: 20px;">
+          <div style="font-size: 3rem; color: var(--primary-green); margin-bottom: 10px;">✓</div>
+          <h3>Thank you!</h3>
+          <p>Your feedback has been logged and will help us improve local facilities.</p>
+        </div>
+
+        <div id="statsSummary" class="stats-summary" style="opacity: 0; transition: opacity 0.5s ease;">
+          <h3 style="margin-bottom: 15px;">Community Sentiments</h3>
+          <div id="statsContent"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 EcoMap Enterprise Computing. A digital sustainability initiative. By Datt Patel.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
